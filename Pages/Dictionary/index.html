@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Form Dictionary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../Assets/CSS/main.css">
+</head>
+<body>
+    <header class="container mx-auto flex items-center justify-between text-xl px-6 py-4 border-b border-gray-600">
+        <a href="../../index.html">LearnEnglish</a>
+        <a href="../../index.html#sections">Sections</a>
+    </header>
+
+    <main class="container mx-auto px-6 my-7 flex flex-col gap-16">
+        <div class="flex items-center justify-between w-full">
+            <button onclick="window.history.go(-1)" class="px-4 py-2 rounded-xl border border-[#9b51e0] text-[#9b51e0]">Back</button>
+        </div>
+        <div class="overflow-x-auto shadow-[0px_0px_13px_-7px_#9b51e0]">
+            <table class="min-w-full bg-white rounded-xl overflow-hidden">
+                <thead>
+                    <tr class="bg-[#9b51e0] text-white text-left">
+                        <th class="py-3 px-5">Verb</th>
+                        <th class="py-3 px-5">Noun</th>
+                        <th class="py-3 px-5">Adjective</th>
+                        <th class="py-3 px-5">Adverb</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-700">
+                    <tr class="border-b">
+                        <td class="py-4 px-5"></td>
+                        <td class="py-4 px-5"></td>
+                        <td class="py-4 px-5"></td>
+                        <td class="py-4 px-5"></td>
+                    </tr>
+                    <tr class="border-b bg-gray-50">
+                        <td class="py-4 px-5"></td>
+                        <td class="py-4 px-5"></td>
+                        <td class="py-4 px-5"></td>
+                        <td class="py-4 px-5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>              
+    </main>
+
+    <script src="../../Assets/JS/main.js"></script>
+</body>
+</html>

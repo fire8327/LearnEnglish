@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../../Assets/CSS/main.css">
+</head>
+<body>
+    <header class="container mx-auto flex items-center justify-between text-xl px-6 py-4 border-b border-gray-600">
+        <a href="../../../index.html">LearnEnglish</a>
+        <a href="../../../index.html#sections">Sections</a>
+    </header>
+
+    <main class="container mx-auto px-6 my-7 flex flex-col items-center gap-16 text-xl">
+        <div class="w-3/4 mx-auto">
+            <button onclick="window.history.go(-1)" class="px-4 py-2 rounded-xl border border-[#9b51e0] text-[#9b51e0]">Back</button>
+        </div>
+        <p class="font-semibold tracking-widest text-2xl">Test 4</p>
+        <div class="w-3/4 flex flex-col gap-4">
+            <div class="flex items-center w-full justify-between gap-4">
+                <div class="flex items-center gap-6">
+                    <div class="flex items-center gap-2">
+                        <p>1.</p>
+                        <input id="result1" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        The vast oceans of the word are dark,   
+                        <input id="input1" type="text" class="rounded-xl px-4 py-1 border border-[#9b51e0] w-64">
+                        and.	
+                    </div>
+                </div>
+                <p class="text-[#9b51e0]">depth</p>
+            </div>
+            <div class="flex items-center w-full justify-between gap-4">
+                <div class="flex items-center gap-6">
+                    <div class="flex items-center gap-2">
+                        <p>2.</p>
+                        <input id="result2" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        	
+                        <input id="input2" type="text" class="rounded-xl px-4 py-1 border border-[#9b51e0] w-64">
+                        places where eyesight counts for little as soon as you venture far beneath the surface.
+                    </div>
+                </div>
+                <p class="text-[#9b51e0]">mistery</p>
+            </div>
+            <div class="flex items-center w-full justify-between gap-4">
+                <div class="flex items-center gap-6">
+                    <div class="flex items-center gap-2">
+                        <p>3.</p>
+                        <input id="result6" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        For humans, who live in a world dominated by
+                        <input id="input6" type="text" class="rounded-xl px-4 py-1 border border-[#9b51e0] w-64">                        
+                        stimuli, to exist in such conditions would be
+                    </div>
+                </div>
+                <p class="text-[#9b51e0]">vision</p>
+            </div>
+            <div class="flex items-center w-full justify-between gap-4">
+                <div class="flex items-center gap-6">
+                    <div class="flex items-center gap-2">
+                        <p>4.</p>
+                        <input id="result3" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                         
+                        <input id="input3" type="text" class="rounded-xl px-4 py-1 border border-[#9b51e0] w-64">
+                        . But for whales and dolphis that live in the ocean or muddy rivers
+                    </div>
+                </div>
+                <p class="text-[#9b51e0]">possible</p>
+            </div>
+            <div class="flex items-center w-full justify-between gap-4">
+                <div class="flex items-center gap-6">
+                    <div class="flex items-center gap-2">
+                        <p>5.</p>
+                        <input id="result4" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        the 
+                        <input id="input4" type="text" class="rounded-xl px-4 py-1 border border-[#9b51e0] w-64">
+                        is important. What is crucial to them is sound.	
+                    </div>
+                </div>
+                <p class="text-[#9b51e0]">dark</p>
+            </div>
+            <div class="flex items-center w-full justify-between gap-4">
+                <div class="flex items-center gap-6">
+                    <div class="flex items-center gap-2">
+                        <p>6.</p>
+                        <input id="result5" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        Sound is an efficient way to transmit and sense 
+                        <input id="input5" type="text" class="rounded-xl px-4 py-1 border border-[#9b51e0] w-64">
+                        , especially as it travels five times faster than through air.
+                    </div>
+                </div>
+                <p class="text-[#9b51e0]">inform</p>
+            </div>           
+        </div>
+        <div class="flex flex-col gap-6 w-1/3 mx-auto">
+            <textarea id="finalResult" readonly class="rounded-xl px-4 py-1 border border-[#9b51e0] w-full resize-none text-lg"></textarea>
+            <div class="flex items-center gap-2 w-full">
+                <button onclick="showResult()" class="rounded-l-xl px-4 py-1 bg-[#9b51e0] text-white w-1/2">Show the result</button>
+                <button onclick="resetAnswers()" class="rounded-r-xl px-4 py-1 bg-[#9b51e0] text-white w-1/2">Reset answers</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+    function showResult() {
+        let count = 0;
+        let nok = 0;
+        
+        // Объект с правильными ответами и их соответствие с id полей
+        let answers = {
+            input1: "government",
+            input2: "reputation",
+            input3: "Curiosity",
+            input4: "mechanic",
+            input5: "adolescence",
+            input6: "intrusion"
+        };
+
+        // Проверка на пустые поля
+        $.each(answers, function(key) {
+            let value = $(`#${key}`).val();
+            if (value === "") {
+                count++;
+            }
+        });
+
+        if (count > 0) {
+            alert("Не все вопросы заполнены. Проверьте, пожалуйста.");
+        } else {
+            $.each(answers, function(key, correctAnswer) {
+                let userAnswer = $(`#${key}`).val();
+                let resultField = $(`#result${key.slice(-1)}`); // Выборка полей результата
+                if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+                    resultField.val("+");
+                    nok++;
+                } else {
+                    resultField.val("-");
+                }
+            });
+
+            // Определение уровня знаний в зависимости от количества правильных ответов
+            let s = "";
+            if (nok < 3) s = "Неудовлетворительно";
+            else if (nok >= 3 && nok < 4) s = "Удовлетворительно";
+            else if (nok >= 4 && nok < 6) s = "Хорошо";
+            else if (nok >= 6) s = "Отлично";
+
+            $("#finalResult").val(`Правильных ответов: ${nok}. Оценка: ${s}.`);
+        }
+    }
+
+    function resetAnswers() {
+        // Сбрасываем значения всех полей ввода
+        $('input[type="text"]').val('');
+        $('#finalResult').val('');
+    }
+    </script>
+</body>
+</html>

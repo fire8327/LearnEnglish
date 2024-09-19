@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../../Assets/CSS/main.css">
+</head>
+<body>
+    <header class="container mx-auto flex items-center justify-between text-xl px-6 py-4 border-b border-gray-600">
+        <a href="../../../index.html">LearnEnglish</a>
+        <a href="../../../index.html#sections">Sections</a>
+    </header>
+
+    <main class="container mx-auto px-6 my-7 flex flex-col items-center gap-16 text-xl">
+        <div class="w-3/4 mx-auto">
+            <button onclick="window.history.go(-1)" class="px-4 py-2 rounded-xl border border-[#9b51e0] text-[#9b51e0]">Back</button>
+        </div>
+        <p class="font-semibold tracking-widest text-2xl">Test 2</p>
+        <div class="w-3/4 flex flex-col gap-8">
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>1.</p>
+                        <input id="result1" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 1. Образуйте прилагательное с противоположным значением от слова "correct":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q1">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q1" value="1">
+                        <span class="text-[#9b51e0]">uncorrect</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q1" value="2">
+                        <span class="text-[#9b51e0]">incorrect</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q1" value="3">
+                        <span class="text-[#9b51e0]">imcorrect</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q1" value="4">
+                        <span class="text-[#9b51e0]">ilcorrect</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>2.</p>
+                        <input id="result2" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 2. Образуйте прилагательное с противоположным значением от слова "possible":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q2">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q2" value="1">
+                        <span class="text-[#9b51e0]">impossible</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q2" value="2">
+                        <span class="text-[#9b51e0]">illposible</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q2" value="3">
+                        <span class="text-[#9b51e0]">inpossible</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q2" value="4">
+                        <span class="text-[#9b51e0]">unpossible</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>3.</p>
+                        <input id="result3" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 3. Образуйте прилагательное с противоположным значением от слова "tidy":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q3">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q3" value="1">
+                        <span class="text-[#9b51e0]">untidy</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q3" value="2">
+                        <span class="text-[#9b51e0]">imtidy</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q3" value="3">
+                        <span class="text-[#9b51e0]">distidy</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q3" value="4">
+                        <span class="text-[#9b51e0]">iltidy</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q3" value="5">
+                        <span class="text-[#9b51e0]">mistidy</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>4.</p>
+                        <input id="result4" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 4. Образуйте прилагательное с противоположным значением от слова "usually":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q4">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q4" value="1">
+                        <span class="text-[#9b51e0]">disusually</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q4" value="2">
+                        <span class="text-[#9b51e0]">unusually</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q4" value="3">
+                        <span class="text-[#9b51e0]">ilusually</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q4" value="4">
+                        <span class="text-[#9b51e0]">misusually</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q4" value="5">
+                        <span class="text-[#9b51e0]">imusually</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>5.</p>
+                        <input id="result5" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 5. Образуйте прилагательное с противоположным значением от слова "natural":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q5">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q5" value="1">
+                        <span class="text-[#9b51e0]">unnatural</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q5" value="2">
+                        <span class="text-[#9b51e0]">disnatural</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q5" value="3">
+                        <span class="text-[#9b51e0]">innatural</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q5" value="4">
+                        <span class="text-[#9b51e0]">ilnatural</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q5" value="5">
+                        <span class="text-[#9b51e0]">misnatural</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>6.</p>
+                        <input id="result6" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 6. Образуйте прилагательное с противоположным значением от слова "equal":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q6">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q6" value="1">
+                        <span class="text-[#9b51e0]">reequal</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q6" value="2">
+                        <span class="text-[#9b51e0]">disequel</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q6" value="3">
+                        <span class="text-[#9b51e0]">anticequel</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q6" value="4">
+                        <span class="text-[#9b51e0]">unequel</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q6" value="5">
+                        <span class="text-[#9b51e0]">ilequel</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>7.</p>
+                        <input id="result7" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 7. Образуйте прилагательное с противоположным значением от слова "capable":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q7">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q7" value="1">
+                        <span class="text-[#9b51e0]">discapable</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q7" value="2">
+                        <span class="text-[#9b51e0]">ircapable</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q7" value="3">
+                        <span class="text-[#9b51e0]">miscapable</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q7" value="4">
+                        <span class="text-[#9b51e0]">uncapable</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q7" value="5">
+                        <span class="text-[#9b51e0]">incapable</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>8.</p>
+                        <input id="result8" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 8. Образуйте прилагательное с противоположным значением от слова "determined":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q8">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q8" value="1">
+                        <span class="text-[#9b51e0]">undetermined</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q8" value="2">
+                        <span class="text-[#9b51e0]">disdetermined</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q8" value="3">
+                        <span class="text-[#9b51e0]">irdetermined</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q8" value="4">
+                        <span class="text-[#9b51e0]">ildetermined</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q8" value="5">
+                        <span class="text-[#9b51e0]">undetermined</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>9.</p>
+                        <input id="result9" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 9. Образуйте прилагательное с противоположным значением от слова "pleasant":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q9">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q9" value="1">
+                        <span class="text-[#9b51e0]">displeasant</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q9" value="2">
+                        <span class="text-[#9b51e0]">unpleasant</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q9" value="3">
+                        <span class="text-[#9b51e0]">depleasant</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q9" value="4">
+                        <span class="text-[#9b51e0]">irpleasant</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q9" value="5">
+                        <span class="text-[#9b51e0]">mispleasant</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>10.</p>
+                        <input id="result10" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 10. Образуйте прилагательное с противоположным значением от слова "happy":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q10">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q10" value="1">
+                        <span class="text-[#9b51e0]">ilhappy</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q10" value="2">
+                        <span class="text-[#9b51e0]">dishappy</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q10" value="3">
+                        <span class="text-[#9b51e0]">imhappy</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q10" value="4">
+                        <span class="text-[#9b51e0]">unhappy</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q10" value="5">
+                        <span class="text-[#9b51e0]">dehappy</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>11.</p>
+                        <input id="result11" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 11. Образуйте прилагательное с противоположным значением от слова "easy":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q11">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q11" value="1">
+                        <span class="text-[#9b51e0]">uneasy</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q11" value="2">
+                        <span class="text-[#9b51e0]">ileasy</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q11" value="3">
+                        <span class="text-[#9b51e0]">ireasy</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q11" value="4">
+                        <span class="text-[#9b51e0]">diseasy</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q11" value="5">
+                        <span class="text-[#9b51e0]">miseasy</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>12.</p>
+                        <input id="result12" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 12. Образуйте прилагательное с противоположным значением от слова "welcome":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q12">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q12" value="1">
+                        <span class="text-[#9b51e0]">imwelcome</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q12" value="2">
+                        <span class="text-[#9b51e0]">dewelcom</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q12" value="3">
+                        <span class="text-[#9b51e0]">unwelcom</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q12" value="4">
+                        <span class="text-[#9b51e0]">ilwelcom</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q12" value="5">
+                        <span class="text-[#9b51e0]">arwelcom</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>13.</p>
+                        <input id="result13" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 13. Образуйте прилагательное с противоположным значением от слова "fair":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q13">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q13" value="1">
+                        <span class="text-[#9b51e0]">disfair</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q13" value="2">
+                        <span class="text-[#9b51e0]">misfair</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q13" value="3">
+                        <span class="text-[#9b51e0]">irfair</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q13" value="4">
+                        <span class="text-[#9b51e0]">ilfair</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q13" value="5">
+                        <span class="text-[#9b51e0]">unfair</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>14.</p>
+                        <input id="result14" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 14. Образуйте прилагательное с противоположным значением от слова "fashion":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q14">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q14" value="1">
+                        <span class="text-[#9b51e0]">ilfashion</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q14" value="2">
+                        <span class="text-[#9b51e0]">imfashion</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q14" value="3">
+                        <span class="text-[#9b51e0]">misfashion</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q14" value="4">
+                        <span class="text-[#9b51e0]">irfashion</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q14" value="5">
+                        <span class="text-[#9b51e0]">unfashion</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>15.</p>
+                        <input id="result15" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 15. Образуйте прилагательное с противоположным значением от слова "clear":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q15">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q15" value="1">
+                        <span class="text-[#9b51e0]">inclear</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q15" value="2">
+                        <span class="text-[#9b51e0]">unclear</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q15" value="3">
+                        <span class="text-[#9b51e0]">misclear</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q15" value="4">
+                        <span class="text-[#9b51e0]">disclear</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q15" value="5">
+                        <span class="text-[#9b51e0]">imclear</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>16.</p>
+                        <input id="result16" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 16. Образуйте прилагательное с противоположным значением от слова "active":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q16">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q16" value="1">
+                        <span class="text-[#9b51e0]">unactive</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q16" value="2">
+                        <span class="text-[#9b51e0]">disactive</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q16" value="3">
+                        <span class="text-[#9b51e0]">inactivity</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q16" value="4">
+                        <span class="text-[#9b51e0]">nonactive</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q16" value="5">
+                        <span class="text-[#9b51e0]">inactiveness</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>17.</p>
+                        <input id="result17" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 17. Образуйте прилагательное с противоположным значением от слова "healthy":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q17">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q17" value="1">
+                        <span class="text-[#9b51e0]">unhealthy</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q17" value="2">
+                        <span class="text-[#9b51e0]">disehealthy</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q17" value="3">
+                        <span class="text-[#9b51e0]">unheal</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q17" value="4">
+                        <span class="text-[#9b51e0]">imhealthy</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q17" value="5">
+                        <span class="text-[#9b51e0]">ilhealthy</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>18.</p>
+                        <input id="result18" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 18. Образуйте прилагательное с противоположным значением от слова "popular":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q18">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q18" value="1">
+                        <span class="text-[#9b51e0]">unpopular</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q18" value="2">
+                        <span class="text-[#9b51e0]">dispopular</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q18" value="3">
+                        <span class="text-[#9b51e0]">mispopular</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q18" value="4">
+                        <span class="text-[#9b51e0]">impopular</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q18" value="5">
+                        <span class="text-[#9b51e0]">unpopular</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>19.</p>
+                        <input id="result19" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 19. Образуйте прилагательное с противоположным значением от слова "sane":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q19">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q19" value="1">
+                        <span class="text-[#9b51e0]">insane</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q19" value="2">
+                        <span class="text-[#9b51e0]">disane</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q19" value="3">
+                        <span class="text-[#9b51e0]">misane</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q19" value="4">
+                        <span class="text-[#9b51e0]">ilane</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q19" value="5">
+                        <span class="text-[#9b51e0]">insane</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>20.</p>
+                        <input id="result20" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 20. Образуйте прилагательное с противоположным значением от слова "certain":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q20">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q20" value="1">
+                        <span class="text-[#9b51e0]">uncertain</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q20" value="2">
+                        <span class="text-[#9b51e0]">discertain</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q20" value="3">
+                        <span class="text-[#9b51e0]">miscertain</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q20" value="4">
+                        <span class="text-[#9b51e0]">ilcertain</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q20" value="5">
+                        <span class="text-[#9b51e0]">uncertain</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-6 w-1/3 mx-auto">
+            <textarea id="finalResult" readonly class="rounded-xl px-4 py-1 border border-[#9b51e0] w-full resize-none text-lg"></textarea>
+            <div class="flex items-center gap-2 w-full">
+                <button onclick="checkMe()" class="rounded-l-xl px-4 py-1 bg-[#9b51e0] text-white w-1/2">Show the result</button>
+                <button onclick="resetAnswers()" class="rounded-r-xl px-4 py-1 bg-[#9b51e0] text-white w-1/2">Reset answers</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+    let res = "12124232213211134512";
+
+    function checkMe() {
+        let count = 0;
+
+        // Проверяем, заполнены ли все вопросы
+        for (let i = 1; i <= 20; i++) {
+            if (!$(`#q${i} input[type=radio]:checked`).length) {
+                count += 1;
+            }
+        }
+
+        if (count > 0) {
+            alert("Вы ответили не на все вопросы. Пожалуйста, ответьте на все.");
+        } else {
+            answer();
+        }
+    }
+
+    function control(k, options) {
+        return options.eq(k - 1).is(':checked');
+    }
+
+    function answer() {
+        let answ = "";
+
+        // Проходим по всем вопросам
+        for (let i = 1; i <= 20; i++) {
+            let options = $(`#q${i} input[type=radio]`);
+            answ += control(parseInt(res.charAt(i - 1)), options) ? "1" : "0";
+        }
+        
+        showResult(answ);
+    }
+
+    function showResult(answ) {
+        let nok = answ.split('1').length - 1;
+        let s = '';
+
+        if (nok < 10) s = "Плохой результат";
+        else if (nok >= 10 && nok < 16) s = "Средний результат";
+        else if (nok >= 16 && nok < 18) s = "Хорошо";
+        else s = "Отлично";
+
+        $('#finalResult').val(`Ваш результат: ${nok}. Оценка: ${s}.`);
+
+        // Выводим результат по каждому вопросу
+        for (let i = 0; i < answ.length; i++) {
+            $(`#result${i + 1}`).val(answ.charAt(i) === "1" ? " + " : " - ");
+        }
+    }
+
+
+    function resetAnswers() {
+        // Сбрасываем значения всех полей ввода
+        $('input[type="radio"]').val('');
+        $('#finalResult').val('');
+    }
+    </script>
+</body>
+</html>

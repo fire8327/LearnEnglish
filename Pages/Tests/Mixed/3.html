@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../../Assets/CSS/main.css">
+</head>
+<body>
+    <header class="container mx-auto flex items-center justify-between text-xl px-6 py-4 border-b border-gray-600">
+        <a href="../../../index.html">LearnEnglish</a>
+        <a href="../../../index.html#sections">Sections</a>
+    </header>
+
+    <main class="container mx-auto px-6 my-7 flex flex-col items-center gap-16 text-xl">
+        <div class="w-3/4 mx-auto">
+            <button onclick="window.history.go(-1)" class="px-4 py-2 rounded-xl border border-[#9b51e0] text-[#9b51e0]">Back</button>
+        </div>
+        <p class="font-semibold tracking-widest text-2xl">Test 3</p>
+        <div class="w-3/4 flex flex-col gap-8">
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>6.</p>
+                        <input id="result6" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 6. Найдите ошибку в образовании слова:</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q6">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q6" value="1">
+                        <span class="text-[#9b51e0]">inaccessible</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q6" value="2">
+                        <span class="text-[#9b51e0]">illogical</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q6" value="3">
+                        <span class="text-[#9b51e0]">inescapable</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q6" value="4">
+                        <span class="text-[#9b51e0]">unpredictable</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q6" value="5">
+                        <span class="text-[#9b51e0]">inclear</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>7.</p>
+                        <input id="result7" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 7. Какая из приставок соответствует русской приставке "пред-":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q7">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q7" value="1">
+                        <span class="text-[#9b51e0]">pre-</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q7" value="2">
+                        <span class="text-[#9b51e0]">un-</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q7" value="3">
+                        <span class="text-[#9b51e0]">sub-</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q7" value="4">
+                        <span class="text-[#9b51e0]">over-</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q7" value="5">
+                        <span class="text-[#9b51e0]">super-</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>8.</p>
+                        <input id="result8" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 8. Найдите производное от слова "comfort":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q8">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q8" value="1">
+                        <span class="text-[#9b51e0]">discomfort</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q8" value="2">
+                        <span class="text-[#9b51e0]">uncomfort</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q8" value="3">
+                        <span class="text-[#9b51e0]">miscomfort</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q8" value="4">
+                        <span class="text-[#9b51e0]">imcomfort</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q8" value="5">
+                        <span class="text-[#9b51e0]">ircomfort</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>9.</p>
+                        <input id="result9" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 9. Выберите перевод слова "независимый":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q9">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q9" value="1">
+                        <span class="text-[#9b51e0]">independent</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q9" value="2">
+                        <span class="text-[#9b51e0]">undependent</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q9" value="3">
+                        <span class="text-[#9b51e0]">ildependent</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q9" value="4">
+                        <span class="text-[#9b51e0]">disdependent</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q9" value="5">
+                        <span class="text-[#9b51e0]">misdependent</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>10.</p>
+                        <input id="result10" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 10. В образовании какого слова допущена ошибка:</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q10">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q10" value="1">
+                        <span class="text-[#9b51e0]">uneasy</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q10" value="2">
+                        <span class="text-[#9b51e0]">unwelcome</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q10" value="3">
+                        <span class="text-[#9b51e0]">disrespect</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q10" value="4">
+                        <span class="text-[#9b51e0]">uneffective</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q10" value="5">
+                        <span class="text-[#9b51e0]">undo</span>
+                    </label>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>11.</p>
+                        <input id="result11" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 11. Выберите производное от слова "familiar":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q11">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q11" value="1">
+                        <span class="text-[#9b51e0]">infamiliar</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q11" value="2">
+                        <span class="text-[#9b51e0]">unfamiliar</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q11" value="3">
+                        <span class="text-[#9b51e0]">ilfamiliar</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q11" value="4">
+                        <span class="text-[#9b51e0]">postfamiliar</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q11" value="5">
+                        <span class="text-[#9b51e0]">disfamiliar</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>12.</p>
+                        <input id="result12" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 12. Выберите правильный перевод слова "inflexibility":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q12">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q12" value="1">
+                        <span class="text-[#9b51e0]">непреклонность</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q12" value="2">
+                        <span class="text-[#9b51e0]">гибкость</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q12" value="3">
+                        <span class="text-[#9b51e0]">подчинение</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q12" value="4">
+                        <span class="text-[#9b51e0]">неподчинение</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q12" value="5">
+                        <span class="text-[#9b51e0]">подчиненность</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>13.</p>
+                        <input id="result13" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 13. Выберите правильный перевод слова "недорогой":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q13">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q13" value="1">
+                        <span class="text-[#9b51e0]">misexpensive</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q13" value="2">
+                        <span class="text-[#9b51e0]">irexpensive</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q13" value="3">
+                        <span class="text-[#9b51e0]">unexpensive</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q13" value="4">
+                        <span class="text-[#9b51e0]">inexpensive</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q13" value="5">
+                        <span class="text-[#9b51e0]">disexpensive</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>14.</p>
+                        <input id="result14" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 14. Образуйте прилагательное с отрицательным значением от слова "honest":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q14">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q14" value="1">
+                        <span class="text-[#9b51e0]">dishonest</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q14" value="2">
+                        <span class="text-[#9b51e0]">mishonest</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q14" value="3">
+                        <span class="text-[#9b51e0]">unhonest</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q14" value="4">
+                        <span class="text-[#9b51e0]">irhonest</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q14" value="5">
+                        <span class="text-[#9b51e0]">honesty</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>15.</p>
+                        <input id="result15" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 15. Выберите производное от слова "tropical":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q15">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q15" value="1">
+                        <span class="text-[#9b51e0]">sub-tropical</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q15" value="2">
+                        <span class="text-[#9b51e0]">mistropical</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q15" value="3">
+                        <span class="text-[#9b51e0]">undertropical</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q15" value="4">
+                        <span class="text-[#9b51e0]">supertropical</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q15" value="5">
+                        <span class="text-[#9b51e0]">imtropical</span>
+                    </label>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>16.</p>
+                        <input id="result16" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 16. Выберите производное от слова "action":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q16">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q16" value="1">
+                        <span class="text-[#9b51e0]">unaction</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q16" value="2">
+                        <span class="text-[#9b51e0]">interaction</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q16" value="3">
+                        <span class="text-[#9b51e0]">inaction</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q16" value="4">
+                        <span class="text-[#9b51e0]">misaction</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q16" value="5">
+                        <span class="text-[#9b51e0]">imaction</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>17.</p>
+                        <input id="result17" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 17. Выберите слово с префиксом, соответствующим русскому префиксу пере-:</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q17">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q17" value="1">
+                        <span class="text-[#9b51e0]">overpay</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q17" value="2">
+                        <span class="text-[#9b51e0]">irregular</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q17" value="3">
+                        <span class="text-[#9b51e0]">transnational</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q17" value="4">
+                        <span class="text-[#9b51e0]">supernatural</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q17" value="5">
+                        <span class="text-[#9b51e0]">foreground</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>18.</p>
+                        <input id="result18" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 18. Выберите правильное значение приставки ultra-:</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q18">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q18" value="1">
+                        <span class="text-[#9b51e0]">противо-</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q18" value="2">
+                        <span class="text-[#9b51e0]">бывший</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q18" value="3">
+                        <span class="text-[#9b51e0]">сверх-</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q18" value="4">
+                        <span class="text-[#9b51e0]">недо-</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q18" value="5">
+                        <span class="text-[#9b51e0]">снова, заново</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>19.</p>
+                        <input id="result19" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 19. Выберите производное, образованное от слова "large":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q19">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q19" value="1">
+                        <span class="text-[#9b51e0]">unlarge</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q19" value="2">
+                        <span class="text-[#9b51e0]">enlarge</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q19" value="3">
+                        <span class="text-[#9b51e0]">mislarge</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q19" value="4">
+                        <span class="text-[#9b51e0]">divlarge</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q19" value="5">
+                        <span class="text-[#9b51e0]">inlarge</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <p>20.</p>
+                        <input id="result20" readonly type="text" class="rounded-xl py-1 px-1 border border-[#9b51e0] w-8 text-center">
+                    </div>
+                    <p>Вопрос 20. Образуйте производное от слова "natural":</p>
+                </div>
+                <div class="flex flex-col gap-1" id="q20">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q20" value="1">
+                        <span class="text-[#9b51e0]">undernatural</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q20" value="2">
+                        <span class="text-[#9b51e0]">disnatural</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q20" value="3">
+                        <span class="text-[#9b51e0]">supernatural</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q20" value="4">
+                        <span class="text-[#9b51e0]">imnatural</span>
+                    </label>
+                    <label class="flex items-center gap-2">
+                        <input type="radio" name="q20" value="5">
+                        <span class="text-[#9b51e0]">ultranatural</span>
+                    </label>
+                </div>
+            </div>
+                                      
+        </div>
+        <div class="flex flex-col gap-6 w-1/3 mx-auto">
+            <textarea id="finalResult" readonly class="rounded-xl px-4 py-1 border border-[#9b51e0] w-full resize-none text-lg"></textarea>
+            <div class="flex items-center gap-2 w-full">
+                <button onclick="checkMe()" class="rounded-l-xl px-4 py-1 bg-[#9b51e0] text-white w-1/2">Show the result</button>
+                <button onclick="resetAnswers()" class="rounded-r-xl px-4 py-1 bg-[#9b51e0] text-white w-1/2">Reset answers</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+    let res = "12124232213211134512";
+
+    function checkMe() {
+        let count = 0;
+
+        // Проверяем, заполнены ли все вопросы
+        for (let i = 1; i <= 20; i++) {
+            if (!$(`#q${i} input[type=radio]:checked`).length) {
+                count += 1;
+            }
+        }
+
+        if (count > 0) {
+            alert("Вы ответили не на все вопросы. Пожалуйста, ответьте на все.");
+        } else {
+            answer();
+        }
+    }
+
+    function control(k, options) {
+        return options.eq(k - 1).is(':checked');
+    }
+
+    function answer() {
+        let answ = "";
+
+        // Проходим по всем вопросам
+        for (let i = 1; i <= 20; i++) {
+            let options = $(`#q${i} input[type=radio]`);
+            answ += control(parseInt(res.charAt(i - 1)), options) ? "1" : "0";
+        }
+        
+        showResult(answ);
+    }
+
+    function showResult(answ) {
+        let nok = answ.split('1').length - 1;
+        let s = '';
+
+        if (nok < 10) s = "Плохой результат";
+        else if (nok >= 10 && nok < 16) s = "Средний результат";
+        else if (nok >= 16 && nok < 18) s = "Хорошо";
+        else s = "Отлично";
+
+        $('#finalResult').val(`Ваш результат: ${nok}. Оценка: ${s}.`);
+
+        // Выводим результат по каждому вопросу
+        for (let i = 0; i < answ.length; i++) {
+            $(`#result${i + 1}`).val(answ.charAt(i) === "1" ? " + " : " - ");
+        }
+    }
+
+
+    function resetAnswers() {
+        // Сбрасываем значения всех полей ввода
+        $('input[type="radio"]').val('');
+        $('#finalResult').val('');
+    }
+    </script>
+</body>
+</html>

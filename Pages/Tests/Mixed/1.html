@@ -17,7 +17,7 @@
         <div class="w-3/4 mx-auto">
             <button onclick="window.history.go(-1)" class="px-4 py-2 rounded-xl border border-[#9b51e0] text-[#9b51e0]">Back</button>
         </div>
-        <p class="font-semibold tracking-widest text-2xl">Test 2</p>
+        <p class="font-semibold tracking-widest text-2xl">Test 1</p>
         <div class="w-3/4 flex flex-col gap-8">
             <div class="flex flex-col gap-4">
                 <div class="flex items-center gap-4">
@@ -611,56 +611,62 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
+    let res = "12124232213211134512";
+
     function showResult() {
         let count = 0;
-        let nok = 0;
-        
-        // Объект с правильными ответами и их соответствие с id полей
-        let answers = {
-            input1: "government",
-            input2: "reputation",
-            input3: "Curiosity",
-            input4: "mechanic",
-            input5: "adolescence",
-            input6: "intrusion"
-        };
 
-        // Проверка на пустые поля
-        $.each(answers, function(key) {
-            let value = $(`#${key}`).val();
-            if (value === "") {
-                count++;
+        // Проверяем, заполнены ли все вопросы
+        for (let i = 1; i <= 20; i++) {
+            if (!$(`#q${i} input[type=radio]:checked`).length) {
+                count += 1;
             }
-        });
+        }
 
         if (count > 0) {
-            alert("Не все вопросы заполнены. Проверьте, пожалуйста.");
+            alert("Вы ответили не на все вопросы. Пожалуйста, ответьте на все.");
         } else {
-            $.each(answers, function(key, correctAnswer) {
-                let userAnswer = $(`#${key}`).val();
-                let resultField = $(`#result${key.slice(-1)}`); // Выборка полей результата
-                if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
-                    resultField.val("+");
-                    nok++;
-                } else {
-                    resultField.val("-");
-                }
-            });
-
-            // Определение уровня знаний в зависимости от количества правильных ответов
-            let s = "";
-            if (nok < 3) s = "Неудовлетворительно";
-            else if (nok >= 3 && nok < 4) s = "Удовлетворительно";
-            else if (nok >= 4 && nok < 6) s = "Хорошо";
-            else if (nok >= 6) s = "Отлично";
-
-            $("#finalResult").val(`Правильных ответов: ${nok}. Оценка: ${s}.`);
+            answer();
         }
     }
 
+    function control(k, options) {
+        return options.eq(k - 1).is(':checked');
+    }
+
+    function answer() {
+        let answ = "";
+
+        // Проходим по всем вопросам
+        for (let i = 1; i <= 20; i++) {
+            let options = $(`#q${i} input[type=radio]`);
+            answ += control(parseInt(res.charAt(i - 1)), options) ? "1" : "0";
+        }
+
+        showResult(answ);
+    }
+
+    function showResult(answ) {
+        let nok = answ.split('1').length - 1;
+        let s = '';
+
+        if (nok < 10) s = "Плохой результат";
+        else if (nok >= 10 && nok < 16) s = "Средний результат";
+        else if (nok >= 16 && nok < 18) s = "Хорошо";
+        else s = "Отлично";
+
+        $('#finalResult').val(`Ваш результат: ${nok}. Оценка: ${s}.`);
+
+        // Выводим результат по каждому вопросу
+        for (let i = 0; i < answ.length; i++) {
+            $(`#result${i + 1}`).val(answ.charAt(i) === "1" ? " + " : " - ");
+        }
+    }
+
+
     function resetAnswers() {
         // Сбрасываем значения всех полей ввода
-        $('input[type="text"]').val('');
+        $('input[type="radio"]').val('');
         $('#finalResult').val('');
     }
     </script>
